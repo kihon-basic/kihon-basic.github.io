@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=1.0, initial-scale=1.0">
+    
+    <title>KIHON 基本</title>
+    <link id="favicon" rel="icon" type="image/png">
+    <style>
+        :root{
+            --bg: none;
+            --txt: none;
+            --transition1: background-color 0.5s;
+            --transition2: color 0.5s;
+        }
+        body{
+            font-family: "Noto Sans JP", "Hiragino Kaku Gothic Pro", "MS Gothic", sans-serif;
+            background-color: var(--bg);
+            transition: var(--transition1);
+        }
+        #center{
+            user-select: none;
+            position: absolute;
+            height: 60vh;
+            left: 50%;
+            top: 50%;
+            translate: -50% -50%;
+            -webkit-writing-mode: vertical-rl;
+            -moz-writing-mode: vertical-rl;
+            -ms-writing-mode: vertical-rl;
+            writing-mode: vertical-rl;
+            line-height: 2.5;
+            text-align: center;
+            color: var(--txt);
+            transition: var(--transition2);
+            word-break: keep-all;
+            font-weight: 500;
+        }
+        #user-input{
+            user-select: none;
+            position: absolute;
+            width: 80vw;
+            left: 50%;
+            top: 50%;
+            translate: -50% -50%;
+            text-align: center;
+            letter-spacing: -2px;
+            word-break: keep-all;
+            color: var(--txt);
+            transition: color var(--time);
+            font-weight: 500;
+        }
+    </style>
+  <script type="module" crossorigin src="/assets/index-ChqSpI31.js"></script>
+</head>
+<body>
+    <div id="user-input" style="display: block;"></div>
+    <div id="center" style="display: none;"></div>
+    <textarea 
+    id="user-area"
+    autocomplete="off"
+    autocorrect="off"
+    autocapitalize="off"
+    spellcheck="false"
+    style="
+        position: fixed;
+        opacity: 0;
+        pointer-events: none;
+        width: 1px;
+        height: 1px;
+        top: 0;
+        left: 0;
+        border: none;
+        padding: 0;
+        margin: 0;
+    "
+    ></textarea>
+</body>
+</html>
+<!--
+type="text"
+    autocomplete="off"
+    autocorrect="off"
+    autocapitalize="off"
+    spellcheck="false"
+    style="
+        position: fixed;
+        opacity: 0;
+        pointer-events: none;
+        width: 1px;
+        height: 1px;
+        top: 0;
+        left: 0;
+        border: none;
+        padding: 0;
+        margin: 0;
+    "
+-->
