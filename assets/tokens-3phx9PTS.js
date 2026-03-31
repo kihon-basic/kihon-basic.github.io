@@ -1,1 +1,0 @@
-(function(){importScripts(`https://cdn.jsdelivr.net/npm/kuromoji@0.1.2/build/kuromoji.js`),self.onmessage=e=>{e.data.type===`Start`&&kuromoji.builder({dicPath:`/dict`}).build((t,n)=>{if(console.log(n.tokenize),console.log(e.data.text),t){console.error(t);return}n.tokenize(e.data.text)})}})();
